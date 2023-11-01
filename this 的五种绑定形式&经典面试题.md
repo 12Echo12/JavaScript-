@@ -10,11 +10,11 @@
 
 - 在严格模式下，默认的 this 绑定指向 undefined
 
-![](C:\Users\lenovo\Desktop\哈哈\1963.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1963.png)
 
 - 但如果是在非严格模式下调用不在严格模式下的函数，并不会影响 this 指向！！！
 
-![](C:\Users\lenovo\Desktop\哈哈\1964.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1964.png)
 
 
 
@@ -24,7 +24,7 @@
 
 > `隐式绑定`，可以理解为`函数调用时，前面存在调用它的对象，那么this就会隐式绑定到这个对象上`。且如果函数调用前存在多个对象，this指向距离调用自己最近的对象。
 
-![](C:\Users\lenovo\Desktop\哈哈\1965.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1965.png)
 
 - 如上，输出的是 `undefined` ，因为 obj 对象中并没有 name 属性，它的原型链上也没有！！！
 
@@ -34,13 +34,13 @@
 
 - 作为参数传递
 
-![](C:\Users\lenovo\Desktop\哈哈\1966.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1966.png)
 
 如上，传进去的只是一个函数，但该函数并没有与 obj 形成绑定关系，只是通过 obj 访问该函数，并把该函数作为参数传递了而已！！！
 
 - 变量赋值
 
-![](C:\Users\lenovo\Desktop\哈哈\1968.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1968.png)
 
 如上，跟参数传递本质是一样的，只是把该函数赋值给了一个变量，并没有形成绑定关系！！
 
@@ -83,7 +83,7 @@
 
 
 
-![](C:\Users\lenovo\Desktop\哈哈\1969.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1969.png)
 
 
 
@@ -93,7 +93,7 @@
 
 
 
-![](C:\Users\lenovo\Desktop\哈哈\1970.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1970.png)
 
 如上，bar 指向 fn 函数执行完后返回的箭头函数，而执行 bar ，就是执行返回的箭头函数。因为该箭头函数外部作用域的函数 fn 的作用域，而该作用域中的 this 指向 onj1 ，因为函数 fn 通过 .call显式绑定与 obj1 相绑定了！！
 
@@ -113,7 +113,7 @@
 
 
 
-![](C:\Users\lenovo\Desktop\哈哈\1971.png)
+![](C:\Users\lenovo\Desktop\哈哈（picture）\1971.png)
 
 
 
